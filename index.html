@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <nav class="navbar">
+      <ul class="navbar-container">
+        <li class="navbar-item">
+          <div class="filter-dropdown">
+            <button class="filter-button">Filters</button>
+            <div class="filter-items">
+              <div>
+                <label for="read-checkbox">Read</label>
+                <input type="checkbox" name="read-checkbox" id="read-checkbox">
+              </div>
+
+              <div>
+                <label for="not-read-checkbox">Not Read</label>
+                <input type="checkbox" name="not-read-checkbox" id="not-read-checkbox">
+              </div>
+            </div>
+          </div>
+          <button class="add-book-btn">Add Book</button>
+        </li>
+        
+        <li class="navbar-item"><h1 class="main-title">Pocket Library</h1></li>
+        <li class="navbar-item">
+          Search
+          <input type="search" name="book-search" id="book-search" placeholder="Search for a book">
+        </li>
+      </ul>
+    </nav>
+
+    
+
+    <div class="grid-container"></div>
+
+    <div class="newbook-module hidden-display">
+      <div>
+        <label for="title-input">Title </label>
+        <input type="text" name="title-input" id="title-input" required>
+      </div>
+      
+      <div>
+        <label for="author-input">Author</label>
+        <input type="text" name="author-input" id="author-input" required>
+      </div>
+      
+      <div>
+        <label for="page-input">Pages </label>
+        <input type="number" min="0" name="page-input" id="page-input">
+      </div>
+      
+      <div>
+        <p>Read </p>
+        <label for="read-status" class="switch">
+          <input type="checkbox" name="read-status" id="read-status">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      
+      <div>
+        <button type="submit" class="submit-module-btn module-btn">Submit</button>
+        <button class="exit-module-btn module-btn">Exit</button>
+      </div>
+      
+        
+    </div>
+  </main>
+</body>
+</html>
